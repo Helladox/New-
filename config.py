@@ -8,7 +8,7 @@ OWNER_ID = int(getenv("OWNER_ID", "6750546542"))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6750546542").split()))
 MONGO_DB = getenv("MONGO_DB", "mongodb+srv://fiona171593:tbGMvepmKQ8YNfJy@cluster0.5ccbrkf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002232922467"))
-PREMIUM_LOGS = int(getenv("PREMIUM_LOGS", "-1002198271060"))
+CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002130072841"))
+PREMIUM_LOGS = int(getenv("PREMIUM_LOGS", "-1001764565076"))
 
 
