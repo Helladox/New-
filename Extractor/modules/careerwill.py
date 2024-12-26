@@ -33,7 +33,7 @@ import requests
 import json
 import subprocess
 from pyrogram.types.messages_and_media import message
-import helper
+#import helper
 from pyromod import listen
 from pyrogram.types import Message
 import tgcrypto
