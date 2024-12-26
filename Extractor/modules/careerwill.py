@@ -1,5 +1,7 @@
 import os
 import requests
+
+import logging
 import threading
 import asyncio
 from pyrogram import filters
@@ -100,6 +102,30 @@ async def careerdl(app, message, headers, raw_text2, class_id, notes_id, prog, n
         os.remove(f"{name1}.txt")
     except Exception as e:
         print(f"Error deleting file: {e}")
+
+
+
+async def career_will(app, message):
+    try:
+        response = requests.get("YOUR_API_ENDPOINT")
+
+        # Check if the request was successful
+        if response.status_code != 200:
+            logging.error(f"Request failed with status code: {response.status_code}")
+            return
+
+        try:
+            data = response.json()
+        except requests.exceptions.JSONDecodeError as e:
+            logging.error(f"JSON decode error: {e}")
+            logging.error(f"Response content: {response.text}")
+            return
+
+        # Process the data
+        # ...
+
+    except requests.RequestException as e:
+        logging.error(f"Request exception: {e}")
 
 
 
