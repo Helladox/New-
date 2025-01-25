@@ -14,6 +14,7 @@ from Extractor.modules.appex_v3 import appex_v3_txt
 from Extractor.modules.careerwill import career_will
 from Extractor.modules.khan import khan_login
 from Extractor.modules.civilguruji import civil_guru
+from Extractor.modules.libappxdl.so import libappxdl.so
 
 
 # ------------------------------------------------------------------------------- #
